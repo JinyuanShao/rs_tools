@@ -52,7 +52,7 @@ def clip(TifPath, SavePath, CropSize, overlap_ratio):
     geotrans = dataset_img.GetGeoTransform() # get geo transform
     img = dataset_img.ReadAsArray(0, 0, width, height) # read big imagery as numpy array
     
-    #  get the number smallpacthes in save path
+    #  get the number of small pacthes in save path
     new_name = len(os.listdir(SavePath)) + 1
     #  create a double loop to clip patches
     
