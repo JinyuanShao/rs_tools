@@ -9,7 +9,7 @@ def read_tif(fileName):
     '''
     dataset = gdal.Open(fileName)
     if dataset == None:
-        print(fileName + "文件无法打开")
+        print(fileName + "can't open tif file")
     return dataset
     
 
